@@ -16,7 +16,7 @@ epc.data.filter <- subset(epc.data, as.Date(epc.data$Date, format = "%d/%m/%Y") 
 rm(epc.data)
 
 # draw the plot
-png(file = "plot1.png")
+png(file = "plot1.png" , width=400, height=400)
 hist(as.numeric(epc.data.filter$Global_active_power), col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()
 rm(list = ls())
